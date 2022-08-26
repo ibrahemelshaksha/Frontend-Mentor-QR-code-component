@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,9 +27,9 @@
         margin: 0;
         font-family: "Outfit", sans-serif;
       }
-      section {
+      main {
         background-color: hsl(0, 0%, 100%);
-        width: 220px;
+        width: 300px;
         padding: 15px;
         position: absolute;
         top: 50%;
@@ -37,19 +37,21 @@
         transform: translate(-50%, -50%);
         text-align: center;
         border-radius: 15px;
+        box-sizing: border-box;
       }
-      section img {
+      main img {
         width: 100%;
         border-radius: 10px;
       }
-      section :nth-child(2) {
+      main :nth-child(2) {
         font-weight: 700;
-        font-size: 17px;
+        font-size: 21px;
       }
-      section :nth-child(3) {
+      main :nth-child(3) {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 15px;
         color: hsl(220, 15%, 55%);
+        
       }
 
       .attribution {
@@ -62,20 +64,21 @@
     </style>
   </head>
   <body>
-    <section>
+    <main role="main">
       <img src="images/image-qr-code.png" alt="image-qr-code" />
-      <p>Improve your front-end skills by building projects</p>
+      <h1>Improve your front-end skills by building projects</h1>
       <p>
         Scan the QR code to visit Frontend Mentor and take your coding skills to
         the next level
       </p>
-    </section>
-
+    </main>
+    <footer role="contentinfo">
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">ibrahem-elshaksha</a>.
     </div>
+  </footer>
   </body>
 </html>
